@@ -17,6 +17,7 @@ public class TopDownMovePlayer : MonoBehaviour
     {
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     }
+    //Displacement in the "X" axes and "Y" axes
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + direction * speedMove * Time.fixedDeltaTime);
