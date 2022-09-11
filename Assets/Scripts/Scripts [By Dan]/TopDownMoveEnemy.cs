@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// This script takes care of the A.I. of the enemy allowing him to patrol the map through patrol points located on the map and at the moment in which the player is a short distance from the enemy, he recognizes the distance and begins the chase.
+/// 
+/// </summary>
 public class TopDownMoveEnemy : MonoBehaviour
 {
     [SerializeField] private float speedMove = 4f;
@@ -28,35 +33,21 @@ public class TopDownMoveEnemy : MonoBehaviour
 
         if (distToPlayer < rangeVision)
         {
-            //In case the distance between the player and the enemy is less than the enemy's view range, execute
-            ChasePlayer();
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speedMove * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, patrolPoints[randomNum].position) < minDistance)
+            {
+                randomNum = Random.Range(0, patrolPoints.Length);
+            }
         }
         else
         {
-            //In case the distance between the player and the enemy is greater than the enemy's view range, execute
-            StopChasePlayer();
-        }        
-    }
-    //Execution of the patrol system
-    private void ChasePlayer()
-    {
-        //Move to selected patrol point
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speedMove * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[randomNum].position, speedMove * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, patrolPoints[randomNum].position) < minDistance)
-        {
-            //Random choice of new patrol point
-            randomNum = Random.Range(0, patrolPoints.Length);
-        }
-    }
-    //Running the tracking system
-    private void StopChasePlayer()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, patrolPoints[randomNum].position, speedMove * Time.deltaTime);
-        
-        if (Vector2.Distance(transform.position, patrolPoints[randomNum].position) < minDistance)
-        {
-            randomNum = Random.Range(0, patrolPoints.Length);
+            if (Vector2.Distance(transform.position, patrolPoints[randomNum].position) < minDistance)
+            {
+                randomNum = Random.Range(0, patrolPoints.Length);
+            }
         }
     }
 }

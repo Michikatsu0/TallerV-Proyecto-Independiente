@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// This script takes care of the movement of the player moving between the “X” axis and the “Y” axis.
+/// 
+/// </summary>
 public class TopDownMovePlayer : MonoBehaviour
 {
     [SerializeField] private float speedMove = 5f;
@@ -17,7 +22,6 @@ public class TopDownMovePlayer : MonoBehaviour
     {
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     }
-    //Displacement in the "X" axes and "Y" axes
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + direction * speedMove * Time.fixedDeltaTime);
