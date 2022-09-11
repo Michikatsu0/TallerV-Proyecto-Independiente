@@ -34,11 +34,6 @@ public class TopDownMoveEnemy : MonoBehaviour
         if (distToPlayer < rangeVision)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speedMove * Time.deltaTime);
-
-            if (Vector2.Distance(transform.position, patrolPoints[randomNum].position) < minDistance)
-            {
-                randomNum = Random.Range(0, patrolPoints.Length);
-            }
         }
         else
         {
