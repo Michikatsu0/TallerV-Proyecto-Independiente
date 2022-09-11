@@ -15,6 +15,8 @@ public class TopDownMoveEnemy : MonoBehaviour
     [SerializeField] private float minDistance = 0.2f;
     [SerializeField] public Transform player;
     [SerializeField] private float rangeVision;
+    [SerializeField] private float distanceToDie = 1;
+    [SerializeField] GameObject target;
 
     private int randomNum;
 
@@ -34,6 +36,11 @@ public class TopDownMoveEnemy : MonoBehaviour
         if (distToPlayer < rangeVision)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speedMove * Time.deltaTime);
+
+            if (distToPlayer < distanceToDie)
+            {
+                Destroy(target);
+            }
         }
         else
         {

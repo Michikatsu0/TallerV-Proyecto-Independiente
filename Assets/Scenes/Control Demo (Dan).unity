@@ -861,6 +861,8 @@ MonoBehaviour:
   minDistance: 0.2
   player: {fileID: 1233511573}
   rangeVision: 3
+  distanceToDie: 1
+  target: {fileID: 1233511571}
 --- !u!1 &1045340582
 GameObject:
   m_ObjectHideFlags: 0
