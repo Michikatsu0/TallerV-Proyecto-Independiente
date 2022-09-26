@@ -5,9 +5,11 @@ using UnityEngine;
 public class TopDownWaypointsSystem : MonoBehaviour
 {
     [SerializeField] private float speed = 4f;
+    [SerializeField] private float chaseTime = 10f;
 
     [SerializeField] private List<Vector3> waypointList;
     [SerializeField] private List<float> waitTimeList;
+    
     private int waypointIndex;
 
     [SerializeField] private Vector3 aimDirection;
@@ -18,13 +20,13 @@ public class TopDownWaypointsSystem : MonoBehaviour
     [SerializeField] private float viewDistance = 50f;
 
     private TopDownFieldOfView fieldOfView;
+    private float setTime;
 
     private enum State
     {
         Waiting,
         Moving,
         Attack,
-        Busy,
     }
 
     private State state;
@@ -42,6 +44,8 @@ public class TopDownWaypointsSystem : MonoBehaviour
         fieldOfView = Instantiate(pfFieldOfView, null).GetComponent<TopDownFieldOfView>();
         fieldOfView.SetFoV(fov);
         fieldOfView.SetViewDistance(viewDistance);
+
+        setTime = chaseTime;
     }
 
     private void Update()
@@ -59,8 +63,6 @@ public class TopDownWaypointsSystem : MonoBehaviour
                 AttackPlayer();
                 break;
 
-            case State.Busy:
-                break;
         }
 
         if (fieldOfView != null)
@@ -109,9 +111,7 @@ public class TopDownWaypointsSystem : MonoBehaviour
 
     private void AttackPlayer()
     {
-        state = State.Busy;
-
-        Debug.Log("Test");
+        state = State.Attack;
 
         Vector3 targetPosition = player.GetPosition();
 
@@ -119,11 +119,22 @@ public class TopDownWaypointsSystem : MonoBehaviour
 
         lastMoveDir = dirToTarget;
 
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        chaseTime -= Time.deltaTime;
 
-        if (player == null)
+        if (chaseTime <= 0f)
         {
+            chaseTime = setTime;
+
             state = State.Moving;
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+            if (player == null)
+            {
+                state = State.Moving;
+            }
         }
     }
 
