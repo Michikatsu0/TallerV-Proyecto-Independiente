@@ -36,7 +36,6 @@ public class TopDownWaypointsSystem : MonoBehaviour
 
     private void Start()
     {
-        Transform bodyTransform = transform.Find("Body");
         state = State.Waiting;
         waitTimer = waitTimeList[0];
         lastMoveDir = aimDirection;
