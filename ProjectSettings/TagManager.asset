@@ -61,3 +61,6 @@ TagManager:
   - name: Above
     uniqueID: 961700441
     locked: 0
+  - name: Walls
+    uniqueID: 108700931
+    locked: 0
