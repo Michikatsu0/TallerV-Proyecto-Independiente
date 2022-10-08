@@ -19,7 +19,9 @@ public class Camara : MonoBehaviour
         Vector3 posicion = new Vector3();
         posicion.x = _player.position.x;
         posicion.y = _player.position.y;
-        posicion.z = _player.position.y + sizePosZ;
+        posicion.z = _player.position.z + sizePosZ;
         transform.position = Vector3.SmoothDamp(transform.position, posicion, ref _velocity, _smooth);
     }
+
+    
 }

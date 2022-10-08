@@ -47,12 +47,12 @@ public class AgentAI : MonoBehaviour
 
     private void Patroling()
     {
-        if (_agent.remainingDistance <= _agent.stoppingDistance) //done with path
+        if (_agent.remainingDistance <= _agent.stoppingDistance)
         {
             Vector3 point;
-            if (RandomPoint(_centrePoint.position, _range, out point)) //pass in our centre point and radius of area
+            if (RandomPoint(_centrePoint.position, _range, out point)) 
             {
-                Debug.DrawRay(point, Vector2.one, Color.blue, 1.0f); //so you can see with gizmos
+                Debug.DrawLine(point, Vector2.one, Color.blue, 1.0f); 
                 _agent.SetDestination(point);
             }
         }

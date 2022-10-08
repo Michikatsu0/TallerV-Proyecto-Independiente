@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    [SerializeField] private Transform _player;
-    [SerializeField] private float _speed; 
-    Vector3 _direction;
-    void Start()
+
+    [SerializeField] private float _speed;
+    private Rigidbody2D _rigidbody2D;
+    private Vector3 _direction;
+
+    void Awake()
     {
-        
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"),0);
-        _player.Translate(_direction.normalized * Time.deltaTime * _speed)  ;
+        _rigidbody2D.velocity = new Vector3(_direction.x * _speed, _direction.y * _speed);
     }
+
+
+    private void Update()
+    {
+        _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"), 0);
+    }
+    
 }
