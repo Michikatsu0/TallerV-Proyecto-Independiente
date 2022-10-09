@@ -157,7 +157,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -176,6 +176,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Exclamation: {fileID: 7281701973581326278}
+  dialogosPanel: {fileID: 0}
+  dialogosTexto: {fileID: 0}
+  lineasDialogo: []
 --- !u!1001 &3074212648184776028
 PrefabInstance:
   m_ObjectHideFlags: 0
