@@ -13,7 +13,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post
   - Water
   - UI
   - 
@@ -60,4 +60,7 @@ TagManager:
     locked: 0
   - name: Above
     uniqueID: 961700441
+    locked: 0
+  - name: Walls
+    uniqueID: 108700931
     locked: 0

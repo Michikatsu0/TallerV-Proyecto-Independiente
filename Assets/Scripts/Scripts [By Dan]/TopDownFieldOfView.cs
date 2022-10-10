@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Recurces.Utils;
 
-
 public class TopDownFieldOfView : MonoBehaviour
 {
 

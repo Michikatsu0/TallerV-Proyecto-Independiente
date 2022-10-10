@@ -158,7 +158,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.moremountains.topdownengine
-    Standalone: unity.MoreMountains.TopDown
+    Standalone: com.DefaultCompany.TallerV-Proyecto-Independiente
     Tizen: com.Company.ProductName
     iPhone: com.moremountains.topdownengine
     tvOS: com.Company.ProductName
@@ -730,7 +730,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: TopDown
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -738,7 +738,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: TopDown
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: TallerV-Proyecto-Independiente
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
