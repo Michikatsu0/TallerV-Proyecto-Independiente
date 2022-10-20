@@ -31,8 +31,8 @@ public class AgentAI : MonoBehaviour
     [Header("AI Agent Catch")]
     [SerializeField] private float _delayToCatch = 5f;
     [SerializeField] private float _delayToPatrol = 3f;
-    private float _timeToCatch = 0;
-    private float _timeToPatrol = 0;
+    [SerializeField] private float _timeToCatch = 0;
+    [SerializeField] private float _timeToPatrol = 0;
     
 
     public AIStates AIState { get => _aIState; set => _aIState = value; }
@@ -49,18 +49,7 @@ public class AgentAI : MonoBehaviour
     private void Start()
     {
         _playerRef = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(FOVCheckOut());
         
-    }
-
-    private IEnumerator FOVCheckOut()
-    {
-        WaitForSeconds waitFor = new WaitForSeconds(0.2f);
-        while (true)
-        {
-            yield return waitFor;
-            FieldOfView();
-        }
     }
     private void FieldOfView()
     {
@@ -70,28 +59,33 @@ public class AgentAI : MonoBehaviour
         {
             Transform target = rangeCheck[0].transform;
             Vector2 targetDirection = (target.position - transform.position).normalized;
+            float targetDistance = Vector2.Distance(transform.position, _targetPos.position);
 
-            if (Vector2.Angle(_currentDirectionFov, targetDirection) < _fov / 2)
+            if (Vector2.Angle(_currentDirectionFov, targetDirection) < _fov / 2 && targetDistance <= _radius)
             {
-                float targetDistance = Vector2.Distance(transform.position, _targetPos.position);
+                
 
                 if (!Physics2D.Raycast(transform.position, targetDirection, targetDistance, _obstaclesLayer))
                 {
+                    Debug.DrawRay(transform.position, targetDirection, Color.green);
                     _onSeenPlayer = true;
                     _aIState = AIStates.Chasing;
                 }
                 else
-                    OnSeenPlayer = false;
+                    _onSeenPlayer = false;
             }
             else
-                OnSeenPlayer = false;
+                _onSeenPlayer = false;
         }
+        else if (OnSeenPlayer)
+            _onSeenPlayer = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         AIStateMachine();
+        FieldOfView();
     }
 
     private void AIStateMachine()
@@ -113,14 +107,13 @@ public class AgentAI : MonoBehaviour
 
     private void Patroling()
     {
+        _agent.isStopped = false;
         GoToRandomPoint();
         _currentDirectionFov = ((Vector3)_pointFov - _centrePoint.position).normalized;
         if (_currentDirectionFov.x >= 0)
             ChangeLightRotation(-Vector2.Angle(_centrePoint.transform.up, _currentDirectionFov));
         else
             ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, _currentDirectionFov));
-        
-        
     }
     private void GoToRandomPoint()
     {
@@ -131,6 +124,7 @@ public class AgentAI : MonoBehaviour
             {
                 Debug.DrawLine(point, Vector2.one, Color.blue, 1.0f);
                 _agent.SetDestination(point);
+
             }
         }
     }
@@ -139,7 +133,7 @@ public class AgentAI : MonoBehaviour
 
         Vector2 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
+        if (NavMesh.SamplePosition(randomPoint, out hit, 3.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
         {
             //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
             //or add a for loop like in the documentation
@@ -154,44 +148,64 @@ public class AgentAI : MonoBehaviour
 
     private void MoveToTarget()
     {
-        if (OnSeenPlayer)
+        if (_onSeenPlayer)
         {
-            _timeToPatrol = 0;
-            _timeToCatch += Time.deltaTime;
-            OnSeenPlayerEvent();
+            
+
+            if (_timeToCatch >= _delayToCatch)
+            {
+                
+                AIState = AIStates.Catching;
+            }
+            else
+            {
+                _timeToPatrol = 0;
+                _timeToCatch += Time.deltaTime;
+                _agent.SetDestination(_targetPos.position);
+                LightChasePlayer();
+                FOVChasePlayer();
+            }
 
         }
         else
         {
-            _timeToCatch = 0;
-            _timeToPatrol += Time.deltaTime;
+
             if (_timeToPatrol >= _delayToPatrol)
             {
+                _agent.isStopped = true;
                 AIState = AIStates.Patroling;
+                _timeToPatrol = 0;
+            }
+            else
+            {
+                _timeToCatch = 0;
+                _timeToPatrol += Time.deltaTime;
+                _agent.SetDestination(_targetPos.position);
+                LightChasePlayer();
+                FOVChasePlayer();
             }
         }
         
 
         
     }
-    private void OnSeenPlayerEvent()
+
+    private void FOVChasePlayer()
+    {
+        _currentDirectionFov = (_targetPos.position - _centrePoint.position).normalized;
+        if (_currentDirectionFov.x >= 0)
+            ChangeLightRotation(-Vector2.Angle(_centrePoint.transform.up, _currentDirectionFov));
+        else
+            ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, _currentDirectionFov));
+    }
+    private void LightChasePlayer()
     {
         
-        if (_timeToCatch >= _delayToCatch)
-        {
-            AIState = AIStates.Catching;
-            _timeToCatch = 0;
-        }
+        Vector2 targetDirection = (_targetPos.position - _centrePoint.transform.position).normalized;
+        if (targetDirection.x >= 0)
+            ChangeLightRotation(-Vector2.Angle(_centrePoint.transform.up, targetDirection));
         else
-        {
-            _agent.SetDestination(_targetPos.position);
-
-            Vector2 targetDirection = (_targetPos.position - _centrePoint.transform.position).normalized;
-            if (targetDirection.x >= 0)
-                ChangeLightRotation(-Vector2.Angle(_centrePoint.transform.up, targetDirection));
-            else
-                ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, targetDirection));
-        }
+            ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, targetDirection));
     }
 
 
