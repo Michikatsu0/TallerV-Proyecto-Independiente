@@ -97,7 +97,7 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 120
+  m_PointLightInnerAngle: 80
   m_PointLightOuterAngle: 120
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 12
@@ -257,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257396899078588479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.0000057, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -397,4 +397,4 @@ MonoBehaviour:
   - {x: -0.4522686, y: -0.17834844, z: 0}
   m_ShapePathHash: 1485948135
   m_Mesh: {fileID: 0}
-  m_InstanceId: 67188
+  m_InstanceId: 53302
