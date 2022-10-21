@@ -21,13 +21,6 @@ public class Player : MonoBehaviour
         _rigidbody2D.velocity = new Vector3(_direction.x * _speed, _direction.y * _speed);
     }
 
-
-    private void Update()
-    {
-        DirectionMovement();
-    }
-    
-
     public void DirectionMovement()
     {
         _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"), 0);
