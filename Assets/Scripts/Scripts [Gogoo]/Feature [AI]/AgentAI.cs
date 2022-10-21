@@ -9,16 +9,16 @@ using UnityEngine.AI;
 public class AgentAI : MonoBehaviour
 {
     public enum AIStates { Patroling, Chasing, Catching }
-
-    [Header("AI Agent Variables")]
+    [Header("AI Agent Patrolling And Chasing")]
     [SerializeField] private Transform _centrePoint;
     [SerializeField] private Transform _targetPos;
     [SerializeField] private AIStates _aIState;
     [SerializeField] private float _range; 
     private NavMeshAgent _agent;
 
+
     [Header("AI Agent Field Of View")]
-    [Range(1, 360)] public float _fov = 45f;
+    [SerializeReference] [Range(1, 360)] private float _fov = 45f;
     [SerializeField] private float _radius;
     [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private LayerMask _obstaclesLayer;
@@ -31,12 +31,10 @@ public class AgentAI : MonoBehaviour
     [Header("AI Agent Catch")]
     [SerializeField] private float _delayToCatch = 5f;
     [SerializeField] private float _delayToPatrol = 3f;
-    [SerializeField] private float _timeToCatch = 0;
-    [SerializeField] private float _timeToPatrol = 0;
+    private float _timeToCatch = 0;
+    private float _timeToPatrol = 0;
     
-
-    public AIStates AIState { get => _aIState; set => _aIState = value; }
-    public bool OnSeenPlayer { get => _onSeenPlayer; set => _onSeenPlayer = value; }
+    public GameObject Light { get => _light; set => _light = value; }
 
     void Awake()
     {
@@ -51,7 +49,7 @@ public class AgentAI : MonoBehaviour
         _playerRef = GameObject.FindGameObjectWithTag("Player");
         
     }
-    private void FieldOfView()
+    public void FieldOfView()
     {
         Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, _radius, _targetLayer);
 
@@ -77,20 +75,19 @@ public class AgentAI : MonoBehaviour
             else
                 _onSeenPlayer = false;
         }
-        else if (OnSeenPlayer)
+        else if (_onSeenPlayer)
             _onSeenPlayer = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        AIStateMachine();
-        FieldOfView();
+
     }
 
-    private void AIStateMachine()
+    public void AIStateMachine()
     {
-        switch (AIState)
+        switch (_aIState)
         {
             case AIStates.Patroling:
                 Patroling();
@@ -107,7 +104,6 @@ public class AgentAI : MonoBehaviour
 
     private void Patroling()
     {
-        _agent.isStopped = false;
         GoToRandomPoint();
         _currentDirectionFov = ((Vector3)_pointFov - _centrePoint.position).normalized;
         if (_currentDirectionFov.x >= 0)
@@ -155,7 +151,7 @@ public class AgentAI : MonoBehaviour
             if (_timeToCatch >= _delayToCatch)
             {
                 
-                AIState = AIStates.Catching;
+                _aIState = AIStates.Catching;
             }
             else
             {
@@ -172,8 +168,7 @@ public class AgentAI : MonoBehaviour
 
             if (_timeToPatrol >= _delayToPatrol)
             {
-                _agent.isStopped = true;
-                AIState = AIStates.Patroling;
+                _aIState = AIStates.Patroling;
                 _timeToPatrol = 0;
             }
             else
@@ -220,7 +215,7 @@ public class AgentAI : MonoBehaviour
         GameObject target = other.gameObject;
         if (target.CompareTag("Player"))
         {
-            AIState = AIStates.Catching;
+            _aIState = AIStates.Catching;
         }
     }
 }
