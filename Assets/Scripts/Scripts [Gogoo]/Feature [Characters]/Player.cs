@@ -25,14 +25,14 @@ public class Player : MonoBehaviour
     private bool _isHiding;
     private bool watchingMe = false;
 
-    [Header("Player Dash")]
-    [SerializeField] TrailRenderer _trailRenderer;
+    [Header("Player Dash")] 
     [SerializeField] private float _dashPower = 24f;
     [SerializeField] private float _dashTime = 0.2f;
     [SerializeField] private float _dashCooldown = 1f;
+    private TrailRenderer _trailRenderer;
     private bool _canDash = true;
     private bool _isDashing;
-
+    
 
 
     public bool IsHiding { get => _isHiding; set => _isHiding = value; }
@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         //_barrelPrefab.SetActive(false);
+        _trailRenderer = GetComponentInChildren<TrailRenderer>();
         _renderer = GetComponentInChildren<SpriteRenderer>();
         _light2D = GetComponentInChildren<Light2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
