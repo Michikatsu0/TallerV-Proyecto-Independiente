@@ -6,7 +6,7 @@ public class AgentAIController : MonoBehaviour
 {
     public enum CharacterStates { Normal, Stuned }
 
-    [Header("Character Controller")]
+    [Header("Agent AI Controller")]
     [SerializeField] private CharacterStates _characterState;
     private AgentAI _agentAI;
 

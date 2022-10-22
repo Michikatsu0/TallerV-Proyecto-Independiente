@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public enum CharacterStates { Normal, Stuned }
 
-    [Header("Character Controller")]
+    [Header("Player Controller")]
     [SerializeField] private CharacterStates _characterState;
     private Player _player;
 
