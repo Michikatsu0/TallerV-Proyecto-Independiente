@@ -291,9 +291,9 @@ MonoBehaviour:
   _obstaclesLayer:
     serializedVersion: 2
     m_Bits: 256
-  _playerRef: {fileID: 0}
+  _targetRef: {fileID: 0}
   _light: {fileID: 390106387874587861}
-  _onSeenPlayer: 0
+  _onSeenTarget: 0
   _delayToCatch: 5
   _delayToPatrol: 5
   _timeToCatch: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
   - {x: -0.4522686, y: -0.17834844, z: 0}
   m_ShapePathHash: 1485948135
   m_Mesh: {fileID: 0}
-  m_InstanceId: 166980
+  m_InstanceId: 174780
 --- !u!114 &1772619596687985205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.01
-  m_Speed: 3.5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -388,8 +388,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000006053117, y: -0.19922283}
-  m_Size: {x: 0.6635883, y: 0.5627453}
+  m_Offset: {x: 0.000000006053117, y: 0.04}
+  m_Size: {x: 0.68, y: 0.96}
   m_Direction: 1
 --- !u!50 &4531004956919469745
 Rigidbody2D:

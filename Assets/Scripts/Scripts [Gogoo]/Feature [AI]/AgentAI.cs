@@ -22,9 +22,9 @@ public class AgentAI : MonoBehaviour
     [SerializeField] private float _radius;
     [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private LayerMask _obstaclesLayer;
-    [SerializeField] private GameObject _playerRef;
+    [SerializeField] private GameObject _targetRef;
     [SerializeField] private GameObject _light;
-    [SerializeField] private bool _onSeenPlayer = false;
+    [SerializeField] private bool _onSeenTarget = false;
     private Player _player;
     private Vector2 _pointFov = Vector2.zero;
     private Vector2 _currentDirectionFov = Vector2.zero;
@@ -48,10 +48,12 @@ public class AgentAI : MonoBehaviour
 
     private void Start()
     {
-        _playerRef = GameObject.FindGameObjectWithTag("Player");
-        _playerRef.TryGetComponent<Player>(out Player player);
+        _targetRef = GameObject.FindGameObjectWithTag("Player");
+        _targetRef.TryGetComponent<Player>(out Player player);
         _player = player;
     }
+
+
     public void FieldOfView()
     {
         Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, _radius, _targetLayer);
@@ -69,7 +71,7 @@ public class AgentAI : MonoBehaviour
                     if (!_player.IsHiding)
                     {
                         Debug.DrawRay(transform.position, targetDirection, Color.green);
-                        _onSeenPlayer = true;
+                        _onSeenTarget = true;
                         _player.WatchingMe = true;
                         _aIState = AIStates.Chasing;
 
@@ -77,25 +79,25 @@ public class AgentAI : MonoBehaviour
                     else
                     {
                         _player.WatchingMe = false;
-                        _onSeenPlayer = false;
+                        _onSeenTarget = false;
                     }
                 }
                 else
                 {
                     _player.WatchingMe = false;
-                    _onSeenPlayer = false;
+                    _onSeenTarget = false;
                 }
             }
             else
             {
                 _player.WatchingMe = false;
-                _onSeenPlayer = false;
+                _onSeenTarget = false;
             }
         }
-        else if (_onSeenPlayer)
+        else if (_onSeenTarget)
         {
             _player.WatchingMe = false;
-            _onSeenPlayer = false;
+            _onSeenTarget = false;
         }
     }
 
@@ -111,7 +113,7 @@ public class AgentAI : MonoBehaviour
                 MoveToTarget();
                 break;
             case AIStates.Catching:
-
+                CatchTarget();
                 break;
         }
     }
@@ -160,7 +162,7 @@ public class AgentAI : MonoBehaviour
 
     private void MoveToTarget()
     {
-        if (_onSeenPlayer)
+        if (_onSeenTarget)
         {
 
 
@@ -174,8 +176,8 @@ public class AgentAI : MonoBehaviour
                 _timeToPatrol = 0;
                 _timeToCatch += Time.deltaTime;
                 _agent.SetDestination(_targetPos.position);
-                LightChasePlayer();
-                FOVChasePlayer();
+                LightChaseTarget();
+                FOVChaseTarget();
             }
 
         }
@@ -193,15 +195,15 @@ public class AgentAI : MonoBehaviour
                 _timeToCatch = 0;
                 _timeToPatrol += Time.deltaTime;
                 _agent.SetDestination(_targetPos.position);
-                LightChasePlayer();
-                FOVChasePlayer();
+                LightChaseTarget();
+                FOVChaseTarget();
             }
         }
 
 
 
     }
-    private void FOVChasePlayer()
+    private void FOVChaseTarget()
     {
         _currentDirectionFov = (_targetPos.position - _centrePoint.position).normalized;
         if (_currentDirectionFov.x >= 0)
@@ -209,7 +211,7 @@ public class AgentAI : MonoBehaviour
         else
             ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, _currentDirectionFov));
     }
-    private void LightChasePlayer()
+    private void LightChaseTarget()
     {
         Vector2 targetDirection = (_targetPos.position - _centrePoint.transform.position).normalized;
         if (targetDirection.x >= 0)
@@ -223,11 +225,19 @@ public class AgentAI : MonoBehaviour
     }
 
 
+    private void CatchTarget()
+    {
+        _agent.ResetPath();
+        _agent.isStopped = true;
+    }
+
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         GameObject target = other.gameObject;
         if (target.CompareTag("Player"))
         {
+            _agent.isStopped = true;
             _aIState = AIStates.Catching;
         }
     }
