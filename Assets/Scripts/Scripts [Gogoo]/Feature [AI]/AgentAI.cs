@@ -13,27 +13,29 @@ public class AgentAI : MonoBehaviour
     [SerializeField] private Transform _centrePoint;
     [SerializeField] private Transform _targetPos;
     [SerializeField] private AIStates _aIState;
-    [SerializeField] private float _range; 
+    [SerializeField] private float _range;
     private NavMeshAgent _agent;
-
+    private bool _ds;
 
     [Header("AI Agent Field Of View")]
-    [SerializeReference] [Range(1, 360)] private float _fov = 45f;
+    [SerializeReference][Range(1, 360)] private float _fov = 45f;
     [SerializeField] private float _radius;
     [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private LayerMask _obstaclesLayer;
     [SerializeField] private GameObject _playerRef;
     [SerializeField] private GameObject _light;
     [SerializeField] private bool _onSeenPlayer = false;
+    private Player _player;
     private Vector2 _pointFov = Vector2.zero;
     private Vector2 _currentDirectionFov = Vector2.zero;
 
     [Header("AI Agent Catch")]
     [SerializeField] private float _delayToCatch = 5f;
     [SerializeField] private float _delayToPatrol = 3f;
-    private float _timeToCatch = 0;
-    private float _timeToPatrol = 0;
+    [SerializeField] private float _timeToCatch = 0;
+    [SerializeField] private float _timeToPatrol = 0;
     
+
     public GameObject Light { get => _light; set => _light = value; }
 
     void Awake()
@@ -47,7 +49,8 @@ public class AgentAI : MonoBehaviour
     private void Start()
     {
         _playerRef = GameObject.FindGameObjectWithTag("Player");
-        
+        _playerRef.TryGetComponent<Player>(out Player player);
+        _player = player;
     }
     public void FieldOfView()
     {
@@ -56,27 +59,44 @@ public class AgentAI : MonoBehaviour
         if (rangeCheck.Length > 0)
         {
             Transform target = rangeCheck[0].transform;
-            Vector2 targetDirection = (target.position - transform.position).normalized;
+            Vector2 targetDirection = (target.position - transform.position);
             float targetDistance = Vector2.Distance(transform.position, _targetPos.position);
 
             if (Vector2.Angle(_currentDirectionFov, targetDirection) < _fov / 2 && targetDistance <= _radius)
             {
-                
-
                 if (!Physics2D.Raycast(transform.position, targetDirection, targetDistance, _obstaclesLayer))
                 {
-                    Debug.DrawRay(transform.position, targetDirection, Color.green);
-                    _onSeenPlayer = true;
-                    _aIState = AIStates.Chasing;
+                    if (!_player.IsHiding)
+                    {
+                        Debug.DrawRay(transform.position, targetDirection, Color.green);
+                        _onSeenPlayer = true;
+                        _player.WatchingMe = true;
+                        _aIState = AIStates.Chasing;
+
+                    }
+                    else
+                    {
+                        _player.WatchingMe = false;
+                        _onSeenPlayer = false;
+                    }
                 }
                 else
+                {
+                    _player.WatchingMe = false;
                     _onSeenPlayer = false;
+                }
             }
             else
+            {
+                _player.WatchingMe = false;
                 _onSeenPlayer = false;
+            }
         }
         else if (_onSeenPlayer)
+        {
+            _player.WatchingMe = false;
             _onSeenPlayer = false;
+        }
     }
 
 
@@ -108,16 +128,17 @@ public class AgentAI : MonoBehaviour
     }
     private void GoToRandomPoint()
     {
-        if (_agent.remainingDistance <= _agent.stoppingDistance)
+        
+        if (_agent.remainingDistance > _agent.stoppingDistance)
+            return;
+        Vector3 point;
+        if (RandomPoint(_centrePoint.position, _range, out point))
         {
-            Vector3 point;
-            if (RandomPoint(_centrePoint.position, _range, out point))
-            {
-                Debug.DrawLine(point, Vector2.one, Color.blue, 1.0f);
-                _agent.SetDestination(point);
+            Debug.DrawLine(point, Vector2.one, Color.blue, 1.0f);
+            _agent.SetDestination(point);
 
-            }
         }
+
     }
     private bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
@@ -141,11 +162,11 @@ public class AgentAI : MonoBehaviour
     {
         if (_onSeenPlayer)
         {
-            
+
 
             if (_timeToCatch >= _delayToCatch)
             {
-                
+                _agent.ResetPath();
                 _aIState = AIStates.Catching;
             }
             else
@@ -163,6 +184,7 @@ public class AgentAI : MonoBehaviour
 
             if (_timeToPatrol >= _delayToPatrol)
             {
+                _agent.ResetPath();
                 _aIState = AIStates.Patroling;
                 _timeToPatrol = 0;
             }
@@ -175,11 +197,10 @@ public class AgentAI : MonoBehaviour
                 FOVChasePlayer();
             }
         }
-        
 
-        
+
+
     }
-
     private void FOVChasePlayer()
     {
         _currentDirectionFov = (_targetPos.position - _centrePoint.position).normalized;
@@ -190,15 +211,12 @@ public class AgentAI : MonoBehaviour
     }
     private void LightChasePlayer()
     {
-        
         Vector2 targetDirection = (_targetPos.position - _centrePoint.transform.position).normalized;
         if (targetDirection.x >= 0)
             ChangeLightRotation(-Vector2.Angle(_centrePoint.transform.up, targetDirection));
         else
             ChangeLightRotation(Vector2.Angle(_centrePoint.transform.up, targetDirection));
     }
-
-
     void ChangeLightRotation(float newRotation)
     {
         _light.transform.rotation = Quaternion.AngleAxis(newRotation, Vector3.forward);

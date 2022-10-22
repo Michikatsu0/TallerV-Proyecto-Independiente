@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
             case CharacterStates.Normal:
                 if (_player != null)
                 {
-                    _player.DirectionMovement();
+                    _player.PlayerMecanics();
                 }
                 break;
             case CharacterStates.Stuned:

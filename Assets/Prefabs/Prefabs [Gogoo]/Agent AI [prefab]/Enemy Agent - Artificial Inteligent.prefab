@@ -49,7 +49,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000e9f72b6bdfb2e3885962523903a57a06
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 80
   m_PointLightOuterAngle: 120
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 12
+  m_PointLightOuterRadius: 11
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -282,9 +282,9 @@ MonoBehaviour:
   _centrePoint: {fileID: 5257396899078588464}
   _targetPos: {fileID: 0}
   _aIState: 0
-  _range: 12
-  _fov: 65
-  _radius: 12
+  _range: 11
+  _fov: 120
+  _radius: 11
   _targetLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -295,7 +295,9 @@ MonoBehaviour:
   _light: {fileID: 390106387874587861}
   _onSeenPlayer: 0
   _delayToCatch: 5
-  _delayToPatrol: 3
+  _delayToPatrol: 5
+  _timeToCatch: 0
+  _timeToPatrol: 0
 --- !u!114 &96299453210497867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +315,7 @@ MonoBehaviour:
   m_HasRenderer: 0
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
-  m_SelfShadows: 1
+  m_SelfShadows: 0
   m_ApplyToSortingLayers: 00000000e9f72b6bdfb2e38817358f5f9f97d3025962523903a57a06
   m_ShapePath:
   - {x: -0.49098158, y: 0.0009997785, z: 0}
@@ -337,7 +339,7 @@ MonoBehaviour:
   - {x: -0.4522686, y: -0.17834844, z: 0}
   m_ShapePathHash: 1485948135
   m_Mesh: {fileID: 0}
-  m_InstanceId: 67946
+  m_InstanceId: 166980
 --- !u!114 &1772619596687985205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterState: 0
-  _agentAI: {fileID: 0}
 --- !u!195 &5257396899078588467
 NavMeshAgent:
   m_ObjectHideFlags: 0
