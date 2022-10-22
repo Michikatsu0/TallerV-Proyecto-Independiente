@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
-    private bool watchingMe = false;
+    
 
     [Header("Player Movement")]
     [SerializeField] private float _speed;
@@ -22,6 +23,17 @@ public class Player : MonoBehaviour
     private Collider2D _collider2D;
     private bool _canHide = true;
     private bool _isHiding;
+    private bool watchingMe = false;
+
+    [Header("Player Dash")]
+    [SerializeField] TrailRenderer _trailRenderer;
+    [SerializeField] private float _dashPower = 24f;
+    [SerializeField] private float _dashTime = 0.2f;
+    [SerializeField] private float _dashCooldown = 1f;
+    private bool _canDash = true;
+    private bool _isDashing;
+
+
 
     public bool IsHiding { get => _isHiding; set => _isHiding = value; }
     public bool CanHide { get => _canHide; set => _canHide = value; }
@@ -38,35 +50,59 @@ public class Player : MonoBehaviour
         _shadowCaster2D = GetComponentInChildren<ShadowCaster2D>();
     }
 
-    public void PlayerMecanics()
+    public void PlayerMechanics()
     {
-        MovementMecanics();
-        HiddenMecanic();
+        MovementMechanic();
+
+        HiddenMechanic();
+        DashMechanic();
 
     }
 
-    private void MovementMecanics()
+    private void MovementMechanic()
     {
-        if (_canHide)
+        if (!_canHide || _isDashing) return;
+        _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"), 0).normalized;
+        _rigidbody2D.velocity = new Vector3(_direction.x * _speed, _direction.y * _speed);
+    }
+
+
+    private void DashMechanic()
+    {
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && _canDash)
         {
-            _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"), 0);
-            _rigidbody2D.velocity = new Vector3(_direction.x * _speed, _direction.y * _speed);
+            StartCoroutine(Dash());
         }
     }
+    private IEnumerator Dash()
+    {
+        _canDash = false;
+        _isDashing = true;
+        Vector2 originalVelocity = _rigidbody2D.velocity;
+        _rigidbody2D.velocity = originalVelocity * _dashPower;
+        _trailRenderer.emitting = true;
+        yield return new WaitForSeconds(_dashTime);
+        _trailRenderer.emitting = false;
+        _rigidbody2D.velocity = originalVelocity;
+        _isDashing = false;
+        yield return new WaitForSeconds(_dashCooldown);
+        _canDash = true;
+    }
 
 
-    private void HiddenMecanic()
+    private void HiddenMechanic()
     {
         if (watchingMe)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && _canHide)
+            if (Input.GetKeyDown(KeyCode.Space) && _canHide)
             {
                 _rigidbody2D.velocity = Vector2.zero;
                 _canHide = false;
                 _renderer.color = _isInvisible;
 
             }
-            else if(Input.GetKeyUp(KeyCode.LeftShift))
+            else if(Input.GetKeyUp(KeyCode.Space))
             {
                 _canHide = true;
                 _renderer.color = _isVisible;
@@ -74,7 +110,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && _canHide)
+            if (Input.GetKeyDown(KeyCode.Space) && _canHide)
             {
                 //_barrelPrefab.SetActive(true);
                 _collider2D.isTrigger = true;
@@ -85,7 +121,7 @@ public class Player : MonoBehaviour
                 _isHiding = true;
                 _renderer.color = _isInvisible;
             }
-            else if (Input.GetKeyUp(KeyCode.LeftShift))
+            else if (Input.GetKeyUp(KeyCode.Space))
             {
                 //_barrelPrefab.SetActive(false);
                 _collider2D.isTrigger = false;
