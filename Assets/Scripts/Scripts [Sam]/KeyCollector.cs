@@ -24,7 +24,7 @@ public class KeyCollector : MonoBehaviour
 
         if (other.CompareTag("LockedDoor") && Keys>0) //player has the tag PlayerController
         {
-            Keys = Keys - 1;    //pick up One key
+            Keys = Keys - 1;    //Use one key
 
         }
     }
