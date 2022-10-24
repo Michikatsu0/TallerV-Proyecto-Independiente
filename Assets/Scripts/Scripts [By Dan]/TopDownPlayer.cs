@@ -5,7 +5,7 @@ using UnityEngine;
 public class TopDownPlayer : MonoBehaviour
 {
     
-    [SerializeField] public float speed = 5f;
+    [SerializeField] private float speed = 5f;
 
     [SerializeField] private int health = 1;
     [SerializeField] private Vector3 direction;
