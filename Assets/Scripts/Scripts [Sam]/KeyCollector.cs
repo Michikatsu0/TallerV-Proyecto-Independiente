@@ -17,16 +17,17 @@ public class KeyCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("TheKey") && Keys==0) //player has the tag PlayerController
+        if (other.CompareTag("TheKey")) //player has the tag PlayerController
         {
-            Keys=1;    //pick up One key
+            Keys = Keys + 1;    //pick up One key
         }
 
         if (other.CompareTag("LockedDoor") && Keys>0) //player has the tag PlayerController
         {
-            Keys=0;     //uses one key
+            Keys = Keys - 1;    //pick up One key
 
         }
     }
+
 }
 

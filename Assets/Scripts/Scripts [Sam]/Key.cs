@@ -14,9 +14,12 @@ public class Key : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerController") && LocalKey == 0) //player has the tag PlayerController
+        if (other.CompareTag("PlayerController")) //player has the tag PlayerController
         {
-            Destroy(gameObject);     //If the player collides with it, and has no keys, is destructed
+                
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false; //If the player collides with it, the key visually disappears and looses the hitbox
+
         }
     }
 }
