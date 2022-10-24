@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu Demo Scenes (Elite)/MainMenu Demo (Elite).unity
     guid: 1a05c32ff352ae74cb3d6451d367a093
   - enabled: 1
-    path: Assets/Scenes/Control Demo (Dan).unity
+    path: Assets/Scenes/Control Demo V2 (Dan).unity
     guid: 165329c3cbc60b747974ef0afb8d7b9a
+  - enabled: 1
+    path: Assets/Scenes/Keys And Gates/Gates and keys.unity
+    guid: 4df15d6f36037d543883d3333217da9d
+  - enabled: 1
+    path: Assets/Scenes/EndScene/EndScene.unity
+    guid: 1784c6ddd65f64c4f9c8e956963d2238
   m_configObjects: {}
