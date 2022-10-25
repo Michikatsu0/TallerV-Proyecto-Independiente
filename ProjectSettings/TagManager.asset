@@ -9,6 +9,9 @@ TagManager:
   - Enemy
   - World
   - NoMask
+  - PlayerController
+  - TheKey
+  - LockedDoor
   layers:
   - Default
   - TransparentFX
