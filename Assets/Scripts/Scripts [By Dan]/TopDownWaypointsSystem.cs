@@ -147,6 +147,7 @@ public class TopDownWaypointsSystem : MonoBehaviour
 
                 if (waitTimer <= 0f)
                 {
+                    StartCoroutine(AnimView(false));
                     state = State.Moving;
                 }
                 break;
@@ -171,12 +172,32 @@ public class TopDownWaypointsSystem : MonoBehaviour
                 {
                     // Go to next waypoint
                     waitTimer = waitTimeList[waypointIndex];
+                    StartCoroutine(AnimView(true));
                     waypointIndex = (waypointIndex + 1) % waypointList.Count;
                     state = State.Waiting;
                 }
 
                 break;
         }
+    }
+    
+    IEnumerator AnimView(bool hide)
+    {
+        float duration = 0.5f;
+        float t = 0;
+        while (true)
+        {
+            t += Time.deltaTime;
+            float factor = hide ? duration - t : t / duration;
+            fieldOfView.SetViewDistance(viewDistance * (factor));
+            Debug.Log(factor);
+            if (t >= duration)
+            {
+                yield break;
+            }
+            yield return null;
+        }
+        
     }
 
     public Vector3 GetPosition()
