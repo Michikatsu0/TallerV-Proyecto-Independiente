@@ -1,0 +1,24 @@
+﻿Personaje principal:
+* Atrapado
+* Recolectar
+* Cast habilidad
+* Escondite
+Enemigos:
+* Alerta
+* Perder de vista
+* Rip
+* Ataque
+* Sonidos de la duquesa
+UI:
+* Selección o correcto
+* Incorrecto
+Objeto:
+* Recoger
+* Encontrar
+* Activar
+* Comprar
+Música
+* Menú
+* Música de nivel
+* Música de victoria
+* Musica de derrota
