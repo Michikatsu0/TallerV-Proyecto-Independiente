@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpeedPowerUp : PowerUpEffect
 {
     public float buff;
+    
 
     public override void Apply(GameObject target)
     {
