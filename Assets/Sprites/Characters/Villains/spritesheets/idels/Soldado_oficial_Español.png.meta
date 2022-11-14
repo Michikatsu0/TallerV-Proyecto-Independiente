@@ -1,0 +1,1150 @@
+fileFormatVersion: 2
+guid: 5ecca3a328114bd46a95eee68cb96243
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_0"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e84cf7d22e5743439d513a831d4c464
+      internalID: -1997776829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_1"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1de77734caaa0042aaab4942bda3d87
+      internalID: -843096057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_2"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abec0a6fb438fe14e82c35690fb77174
+      internalID: 2099470495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_3"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d78df5b72c42946b0398b2e144cc9c
+      internalID: 1284524089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_4"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b216c9fca6137f439270699249a9ef2
+      internalID: 1443753662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_5"
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33473f2da24b2e5489ac4c62d5aea1c3
+      internalID: -1615416624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_6"
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65401f5774dfc9742acf165c9cb7c770
+      internalID: -1624525198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_7"
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed796939126c8d49b915dad7c593656
+      internalID: -158637304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_8"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ea39b0fa4523e4dbc40165168f9c5d
+      internalID: 1471680868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_9"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e2063b2776a68478d2afbba954a213
+      internalID: -1156511960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_10"
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaac1b3f9faeb14eb23725119964844
+      internalID: -1173318841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_11"
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31db6b50529a47447bc373a1660fb349
+      internalID: 1633859871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_12"
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 13
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f2ae790a611a2478a00e4fa88433ff
+      internalID: 960699497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_13"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 13
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899327ff30c3cee4781e12f14ce3504f
+      internalID: -1765394212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_14"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdd541e7b86fbd408ec5a737b380503
+      internalID: 693330490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_15"
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 13
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caa6836c097d2c498f2c3f2c669cb89
+      internalID: -330079402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_16"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95be6eb5ff2c2d4fa828bdcdb9e5102
+      internalID: -1752001159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_17"
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb272408d2f416469a427fcfb578ddf
+      internalID: -755781765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_18"
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63be21463bd89d247aae628b29ebe0af
+      internalID: 699337636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_19"
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a608cf6b1ed93d24c9518e4db99cfdd7
+      internalID: 1981008740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_20"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346e61d425d1d824098532a6e836cbe4
+      internalID: 118704291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_21"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf8202a48fc8a74d892f902b9083cc3
+      internalID: -2070222592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_22"
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06f71c9c33c0334d9b811942eb74e77
+      internalID: 994290558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_23"
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5c33845a9c84740af2612aff085da2
+      internalID: -261438376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_24"
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb51d414d25d1c4a9b3ff3ba54ca28f
+      internalID: -573689171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_25"
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff31eba54f4f744f82c708030f6bbb4
+      internalID: 754841644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_26"
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5393ae98180f7e74199a07a959dce1ba
+      internalID: 442301944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_27"
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cefb2d70259e944b9e21830f0aa5dd
+      internalID: 1125128367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_28"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 13
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b07bdb4d8b12544845aa211ef76429
+      internalID: -347124981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_29"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 13
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ccc892b1283144d9538c0d8ca299ae
+      internalID: -481515996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_30"
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 13
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70842fb930be0714696b4d5b7b974dec
+      internalID: 171160097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_31"
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 13
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f40d5e52dcae1b4aa479de04e88bb1f
+      internalID: -117091767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_32"
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996b47b5caa69f44d9fac3cbc015a9d3
+      internalID: -2041828828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_33"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a15a15ac93e575428d87528ca0feb0f
+      internalID: -1254283696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_34"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5955e007579ff478ccb41ddf153a1b
+      internalID: 1694098273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_35"
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e8d7f6053c54a41861f2cc24c1b80e
+      internalID: 2129748601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_36"
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a0af621ce588843a3ca1ba14baee30
+      internalID: 273278024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_37"
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d075d4688b8ac4d92cc558e57b4c4f
+      internalID: 1611349537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_38"
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc549502f3455a1489687795096f5db7
+      internalID: -52294013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_39"
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6979af6c01faa4badc0472105945b2
+      internalID: -291702323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_40"
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3f37566c6cd7c4e8d69684f72273a6
+      internalID: -1756805880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_41"
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660f310e4a3abc94cb9c85583f1da80e
+      internalID: 1376425301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_42"
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 13
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8531bcf21939a2a4480965d9e213384a
+      internalID: 664110131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_oficial_Espa\xF1ol_43"
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 13
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d851c6e74f00f46a779f5ab47731f6
+      internalID: 1103768031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Soldado_oficial_Espa\xF1ol_32": -2041828828
+      "Soldado_oficial_Espa\xF1ol_17": -755781765
+      "Soldado_oficial_Espa\xF1ol_43": 1103768031
+      "Soldado_oficial_Espa\xF1ol_10": -1173318841
+      "Soldado_oficial_Espa\xF1ol_29": -481515996
+      "Soldado_oficial_Espa\xF1ol_0": -1997776829
+      "Soldado_oficial_Espa\xF1ol_41": 1376425301
+      "Soldado_oficial_Espa\xF1ol_25": 754841644
+      "Soldado_oficial_Espa\xF1ol_23": -261438376
+      "Soldado_oficial_Espa\xF1ol_2": 2099470495
+      "Soldado_oficial_Espa\xF1ol_30": 171160097
+      "Soldado_oficial_Espa\xF1ol_24": -573689171
+      "Soldado_oficial_Espa\xF1ol_33": -1254283696
+      "Soldado_oficial_Espa\xF1ol_42": 664110131
+      "Soldado_oficial_Espa\xF1ol_21": -2070222592
+      "Soldado_oficial_Espa\xF1ol_15": -330079402
+      "Soldado_oficial_Espa\xF1ol_7": -158637304
+      "Soldado_oficial_Espa\xF1ol_26": 442301944
+      "Soldado_oficial_Espa\xF1ol_36": 273278024
+      "Soldado_oficial_Espa\xF1ol_38": -52294013
+      "Soldado_oficial_Espa\xF1ol_5": -1615416624
+      "Soldado_oficial_Espa\xF1ol_14": 693330490
+      "Soldado_oficial_Espa\xF1ol_13": -1765394212
+      "Soldado_oficial_Espa\xF1ol_39": -291702323
+      "Soldado_oficial_Espa\xF1ol_3": 1284524089
+      "Soldado_oficial_Espa\xF1ol_35": 2129748601
+      "Soldado_oficial_Espa\xF1ol_20": 118704291
+      "Soldado_oficial_Espa\xF1ol_31": -117091767
+      "Soldado_oficial_Espa\xF1ol_8": 1471680868
+      "Soldado_oficial_Espa\xF1ol_34": 1694098273
+      "Soldado_oficial_Espa\xF1ol_6": -1624525198
+      "Soldado_oficial_Espa\xF1ol_37": 1611349537
+      "Soldado_oficial_Espa\xF1ol_4": 1443753662
+      "Soldado_oficial_Espa\xF1ol_40": -1756805880
+      "Soldado_oficial_Espa\xF1ol_27": 1125128367
+      "Soldado_oficial_Espa\xF1ol_18": 699337636
+      "Soldado_oficial_Espa\xF1ol_19": 1981008740
+      "Soldado_oficial_Espa\xF1ol_12": 960699497
+      "Soldado_oficial_Espa\xF1ol_22": 994290558
+      "Soldado_oficial_Espa\xF1ol_28": -347124981
+      "Soldado_oficial_Espa\xF1ol_16": -1752001159
+      "Soldado_oficial_Espa\xF1ol_9": -1156511960
+      "Soldado_oficial_Espa\xF1ol_1": -843096057
+      "Soldado_oficial_Espa\xF1ol_11": 1633859871
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

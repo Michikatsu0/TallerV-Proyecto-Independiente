@@ -1,0 +1,1150 @@
+fileFormatVersion: 2
+guid: d0862937dd4d9d041a5c4a1a6c51ec02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_0"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf551c239a9973244861e2fb7f9abd1d
+      internalID: -692115291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_1"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6c1dc15738b2144a858085ac9d226b
+      internalID: 1838993172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_2"
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ea846039f7e754db2e38c6bc216a3f
+      internalID: 1073059627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_3"
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88112b2fa3a116843999c0e49c73443a
+      internalID: 1376111788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_4"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131456afb8afd6f4383a0af1027b23a6
+      internalID: -1547169799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_5"
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8524310c9a69773478dc97f24f678052
+      internalID: 1353873702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_6"
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7247476776867d468e7e20cdee3804a
+      internalID: -1924419146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_7"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020e785b340827d4ca37fdc8084ff519
+      internalID: -191919185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_8"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f81907ee0f1e6d488a255d6be7059c7
+      internalID: -568563976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_9"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0bb40f0f1956044b98c18b491374c7
+      internalID: -724638130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_10"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cbe6351ee6dbe408196a7aee288138
+      internalID: 1745987400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_11"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbc4923aca01274bbbb7bce2df06c36
+      internalID: 637663797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_12"
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 13
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e241e5f40ee109242a61f38f595f6017
+      internalID: -657604743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_13"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 13
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa24c36e1aa2e574d88b803c053224d5
+      internalID: 501191538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_14"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 13
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eb766de91711b479ce47f10c223a88
+      internalID: -1227793096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_15"
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 13
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d180c16a140a8458b3f461149bbaff
+      internalID: 317686460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_16"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4746fcb15f630a428bf10833acc6817
+      internalID: -1188953295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_17"
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337ed5c7932abcf4cae4ff720cd39ebe
+      internalID: 2067082610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_18"
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 13
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9aa0780b821764b9bdbd51a76ba959
+      internalID: 365381246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_19"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ffc2c71449ee4888764727c10f7dd
+      internalID: -870762084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_20"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dce229a2b572d542a96a65b1f3b983f
+      internalID: 1188355722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_21"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827f3c68736d51e479e46e332a022511
+      internalID: -1684174474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_22"
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 13
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e482e90ed324014bb410009aa47bb95
+      internalID: -791752434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_23"
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f5a971a578a940a962679df2fa6d5
+      internalID: 952424334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_24"
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cff66e5af233743a72b53f1be5f645
+      internalID: -790906469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_25"
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241bc2a9482430a4db8a83881cbe560e
+      internalID: 349971966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_26"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 13
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06789d802f3cf6a4ea638bd1f9053cc2
+      internalID: -2010085653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_27"
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 13
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ace6fbb88d891c488952b65ea5a203e
+      internalID: -215254732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_28"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 13
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9aa0bbd29ce4d488531bf390579cb4
+      internalID: 2108377610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_29"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 13
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d038f7233677cc4489c2d0e0cfa6eac
+      internalID: 198318758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_30"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 13
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1640e6b1e7b864abfe91de52054472
+      internalID: -1096857163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_31"
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 13
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c28570372d0664092f6b3f137a6c11
+      internalID: 1529121075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_32"
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f3115a85ea16d489c470adec88044c
+      internalID: 487215256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_33"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d986be29e4e054495d584d6d69ee6e
+      internalID: 1401943635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_34"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9730ccbc38abce346a4a527604c4abe0
+      internalID: -451395096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_35"
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd84e04acd4e9bb47b8313d9c111ca59
+      internalID: -387837694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_36"
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50837e35f999d7349b0ecc521378ba0a
+      internalID: -20533054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_37"
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d6904700b85fb47801ead475adf925
+      internalID: -40469231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_38"
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf72f8e49ef54f41bb5a5ebca23cfdd
+      internalID: 1998698606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_39"
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ec88ee99ecbb7459a109cc6c0cafd4
+      internalID: -1392263566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_40"
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7732c71a3d9882a49bb1e23113691d6f
+      internalID: -5361028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_41"
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb216959737578448a51b2cf2d53dd73
+      internalID: 598926418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_42"
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e61fdf632cb56c44a541c04b113bf4d
+      internalID: 180451575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sacerdote_Espa\xF1ol_43"
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5078a3b0753aef2438894301b0e7d659
+      internalID: 1772358642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Sacerdote_Espa\xF1ol_7": -191919185
+      "Sacerdote_Espa\xF1ol_16": -1188953295
+      "Sacerdote_Espa\xF1ol_39": -1392263566
+      "Sacerdote_Espa\xF1ol_33": 1401943635
+      "Sacerdote_Espa\xF1ol_26": -2010085653
+      "Sacerdote_Espa\xF1ol_24": -790906469
+      "Sacerdote_Espa\xF1ol_32": 487215256
+      "Sacerdote_Espa\xF1ol_14": -1227793096
+      "Sacerdote_Espa\xF1ol_6": -1924419146
+      "Sacerdote_Espa\xF1ol_20": 1188355722
+      "Sacerdote_Espa\xF1ol_13": 501191538
+      "Sacerdote_Espa\xF1ol_8": -568563976
+      "Sacerdote_Espa\xF1ol_29": 198318758
+      "Sacerdote_Espa\xF1ol_4": -1547169799
+      "Sacerdote_Espa\xF1ol_5": 1353873702
+      "Sacerdote_Espa\xF1ol_42": 180451575
+      "Sacerdote_Espa\xF1ol_36": -20533054
+      "Sacerdote_Espa\xF1ol_21": -1684174474
+      "Sacerdote_Espa\xF1ol_37": -40469231
+      "Sacerdote_Espa\xF1ol_34": -451395096
+      "Sacerdote_Espa\xF1ol_3": 1376111788
+      "Sacerdote_Espa\xF1ol_12": -657604743
+      "Sacerdote_Espa\xF1ol_27": -215254732
+      "Sacerdote_Espa\xF1ol_1": 1838993172
+      "Sacerdote_Espa\xF1ol_23": 952424334
+      "Sacerdote_Espa\xF1ol_11": 637663797
+      "Sacerdote_Espa\xF1ol_2": 1073059627
+      "Sacerdote_Espa\xF1ol_30": -1096857163
+      "Sacerdote_Espa\xF1ol_28": 2108377610
+      "Sacerdote_Espa\xF1ol_35": -387837694
+      "Sacerdote_Espa\xF1ol_18": 365381246
+      "Sacerdote_Espa\xF1ol_31": 1529121075
+      "Sacerdote_Espa\xF1ol_19": -870762084
+      "Sacerdote_Espa\xF1ol_22": -791752434
+      "Sacerdote_Espa\xF1ol_9": -724638130
+      "Sacerdote_Espa\xF1ol_10": 1745987400
+      "Sacerdote_Espa\xF1ol_25": 349971966
+      "Sacerdote_Espa\xF1ol_38": 1998698606
+      "Sacerdote_Espa\xF1ol_43": 1772358642
+      "Sacerdote_Espa\xF1ol_40": -5361028
+      "Sacerdote_Espa\xF1ol_0": -692115291
+      "Sacerdote_Espa\xF1ol_17": 2067082610
+      "Sacerdote_Espa\xF1ol_15": 317686460
+      "Sacerdote_Espa\xF1ol_41": 598926418
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
