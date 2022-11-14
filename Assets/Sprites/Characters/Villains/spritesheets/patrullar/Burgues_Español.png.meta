@@ -168,11 +168,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 13
+        y: 11
         width: 15
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,11 +189,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 13
+        y: 11
         width: 12
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,11 +210,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 46
-        y: 13
+        y: 11
         width: 16
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,11 +231,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 13
+        y: 11
         width: 12
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: "Burgues_Espa\xF1ol_4"
       rect:
         serializedVersion: 2
-        x: 105
+        x: 104
         y: 11
-        width: 14
+        width: 15
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,11 +273,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 124
-        y: 13
+        y: 11
         width: 12
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,11 +294,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 139
-        y: 13
+        y: 11
         width: 16
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,11 +315,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 158
-        y: 13
+        y: 11
         width: 12
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: "Burgues_Espa\xF1ol_8"
       rect:
         serializedVersion: 2
-        x: 199
-        y: 12
-        width: 13
-        height: 23
+        x: 198
+        y: 11
+        width: 15
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,11 +357,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 218
-        y: 13
+        y: 11
         width: 12
-        height: 22
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,11 +378,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 233
-        y: 13
+        y: 11
         width: 16
-        height: 22
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,11 +399,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 252
-        y: 13
+        y: 11
         width: 12
-        height: 22
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,11 +420,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 292
-        y: 13
+        y: 11
         width: 15
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,11 +441,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 312
-        y: 13
+        y: 11
         width: 12
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,11 +462,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 327
-        y: 13
+        y: 11
         width: 16
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,11 +483,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 346
-        y: 13
+        y: 11
         width: 12
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,10 +505,10 @@ TextureImporter:
         serializedVersion: 2
         x: 386
         y: 11
-        width: 14
+        width: 15
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,11 +525,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 406
-        y: 13
+        y: 11
         width: 12
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,11 +546,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 422
-        y: 13
+        y: 11
         width: 16
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,11 +567,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 440
-        y: 13
+        y: 11
         width: 11
-        height: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,12 +587,12 @@ TextureImporter:
       name: "Burgues_Espa\xF1ol_20"
       rect:
         serializedVersion: 2
-        x: 481
+        x: 480
         y: 12
-        width: 13
+        width: 15
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,7 +613,7 @@ TextureImporter:
         width: 12
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: "Burgues_Espa\xF1ol_22"
       rect:
         serializedVersion: 2
-        x: 517
-        y: 13
-        width: 15
-        height: 22
+        x: 516
+        y: 12
+        width: 16
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,7 +655,7 @@ TextureImporter:
         width: 12
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
