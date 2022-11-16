@@ -38,13 +38,14 @@ public class AgentAI : MonoBehaviour
     [SerializeField] private float _delayToPatrol = 3f;
     [SerializeField] private float _timeToCatch = 0;
     [SerializeField] private float _timeToPatrol = 0;
-    
+
+    private Vector3 _previousPos = Vector3.zero;
+    private Animator _animator;
+    private bool fly = true;
+    private bool playAwake = false;
 
     public GameObject Light { get => _light; set => _light = value; }
 
-
-    bool fly = true;
-    bool playAwake = false;
     void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -55,6 +56,7 @@ public class AgentAI : MonoBehaviour
 
     private void Start()
     {
+        _animator = GetComponentInChildren<Animator>();
         _targetRef = GameObject.FindGameObjectWithTag("Player");
         _targetRef.TryGetComponent<Player>(out Player player);
         _player = player;
@@ -142,6 +144,11 @@ public class AgentAI : MonoBehaviour
 
     public void AIStateMachine()
     {
+
+        Vector3 direction = (transform.position - _previousPos).normalized;
+        _animator.SetFloat("X", direction.x);
+        _animator.SetFloat("Y", direction.y);
+
         switch (_aIState)
         {
             case AIStates.Patroling:
@@ -154,6 +161,8 @@ public class AgentAI : MonoBehaviour
                 CatchTarget();
                 break;
         }
+
+        _previousPos = transform.position;
     }
 
 
@@ -168,7 +177,6 @@ public class AgentAI : MonoBehaviour
     }
     private void GoToRandomPoint()
     {
-        
         if (_agent.remainingDistance > _agent.stoppingDistance)
             return;
         Vector3 point;
@@ -178,7 +186,6 @@ public class AgentAI : MonoBehaviour
             _agent.SetDestination(point);
 
         }
-
     }
     private bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
@@ -200,6 +207,8 @@ public class AgentAI : MonoBehaviour
 
     private void MoveToTarget()
     {
+        _animator.SetBool("OnChase", true);
+
         if (_onSeenTarget)
         {
 
@@ -268,6 +277,7 @@ public class AgentAI : MonoBehaviour
 
     private void CatchTarget()
     {
+        _animator.SetTrigger("OnCatch");
         sources[0].clip = clipList[1];
         sources[0].Play();
         _agent.ResetPath();
