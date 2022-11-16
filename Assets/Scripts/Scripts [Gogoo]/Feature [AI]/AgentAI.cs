@@ -8,6 +8,10 @@ using UnityEngine.AI;
 
 public class AgentAI : MonoBehaviour
 {
+    [Header("Audio Settings")]
+    [SerializeField] List<AudioClip> clipList = new List<AudioClip>();
+    [SerializeField] List<AudioSource> sources = new List<AudioSource>();
+
     public enum AIStates { Patroling, Chasing, Catching }
     [Header("AI Agent Patrolling And Chasing")]
     [SerializeField] private Transform _centrePoint;
@@ -38,6 +42,9 @@ public class AgentAI : MonoBehaviour
 
     public GameObject Light { get => _light; set => _light = value; }
 
+
+    bool fly = true;
+    bool playAwake = false;
     void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -99,6 +106,37 @@ public class AgentAI : MonoBehaviour
             _player.WatchingMe = false;
             _onSeenTarget = false;
         }
+    }
+
+
+
+    public void AudioControll()
+    {
+        
+        
+        if (_onSeenTarget)
+        {
+            playAwake = true;
+            sources[0].clip = clipList[0];
+            if (fly)
+            {
+                fly = false;
+                sources[0].Play();
+            }
+        }
+        if (!_onSeenTarget && playAwake)
+        {
+            playAwake = false;
+            sources[0].clip = clipList[3];
+            if (!fly)
+            {
+                fly = true;
+                sources[0].Play();
+            }
+        }
+        
+
+
     }
 
 
@@ -198,6 +236,9 @@ public class AgentAI : MonoBehaviour
                 LightChaseTarget();
                 FOVChaseTarget();
             }
+
+
+
         }
 
 
@@ -227,6 +268,8 @@ public class AgentAI : MonoBehaviour
 
     private void CatchTarget()
     {
+        sources[0].clip = clipList[1];
+        sources[0].Play();
         _agent.ResetPath();
         _agent.isStopped = true;
     }
