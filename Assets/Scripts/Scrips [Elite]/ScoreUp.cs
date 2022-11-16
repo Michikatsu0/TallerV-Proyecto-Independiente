@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
+public class ScoreUp : MonoBehaviour
 {
-    public PowerUpEffect powerUpEffect;
+    //public PowerUpEffect powerUpEffect;
     
-    [SerializeField] private float scoreAmount;
+    [SerializeField] public float scoreAmount;
     [SerializeField] private Score score;
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        powerUpEffect.Apply(collision.gameObject);
-        score.PlusScore(scoreAmount);
+        //powerUpEffect.Apply(collision.gameObject);
+        Score.Instance.PlusScore(scoreAmount);
         Destroy(gameObject);
             
     }
