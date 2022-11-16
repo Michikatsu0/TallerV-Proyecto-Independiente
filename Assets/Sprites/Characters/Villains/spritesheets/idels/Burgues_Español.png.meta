@@ -1,0 +1,1150 @@
+fileFormatVersion: 2
+guid: c5fae657b7baeba45b7d63fa9b860d8f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_0"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259a1140c82247d4e935e52c12ef896e
+      internalID: 1593314833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_1"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed9263e69cfe6546afb6035c489b781
+      internalID: -620250487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_2"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb445058f49e42c4a93fe7a7c2a1feaf
+      internalID: -161071118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_3"
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c1af8dcf8802248975307011ef25c6
+      internalID: 666281889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_4"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acad134b0668ef4ebe86a37a9f93c99
+      internalID: -610973642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_5"
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fca363abd6a214ba43687c8e93f4e5
+      internalID: -1530760433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_6"
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af04442c2637bd40ae5406f965c9647
+      internalID: 2000280795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_7"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f3ce55cb5ddb54f85bf4f31285d123
+      internalID: -407491179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_8"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e37d860afe51d45ab8b1e95870f1b1
+      internalID: -979613557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_9"
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce4b886c8da1764eb70c02ec23641a5
+      internalID: 2063608565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_10"
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca96f7b9716ee245ab2fbe96d91af79
+      internalID: 224256526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_11"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d516d6c1c4f6f74e8c2637bdc095a12
+      internalID: 1764791793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_12"
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d61dd91afa00441beedfca3ce7fa3d
+      internalID: 1904223237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_13"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b1959574ab3d443b5cda2b7d2c6b1a
+      internalID: -1702368796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_14"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e65b07b750ece4fba043886f732a25
+      internalID: 210082663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_15"
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed28cad143e69c542bd61f7138d0f0fd
+      internalID: -31098213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_16"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b4d1eb69d0cb54d8d0101a0846e1da
+      internalID: -144724254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_17"
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb83cefc4daec9c42b084d53210f917a
+      internalID: -1163566613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_18"
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b5cbd584301fd4b87f61c11ce16c28
+      internalID: 1140411295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_19"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f31a269969cad43819907cd5667ba9
+      internalID: 690710830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_20"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a72218f6c6132749ab9f8c068c5d322
+      internalID: -1496253432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_21"
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65299aa4a9fff348be33d0b8caacc62
+      internalID: 166346376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_22"
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1641968d3571ee24ca5e7924bbd199f1
+      internalID: -1216753735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_23"
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b0cc7c779303e4e9a8f4c9be0eb7ca
+      internalID: -360369032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_24"
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42d418e7feba0e45b5228bab3bc2d64
+      internalID: -48253469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_25"
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb7be0e4067b1341a829016cd66c2ee
+      internalID: 445867139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_26"
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c320ebbe8a8224a93e88631732c385
+      internalID: -1081690765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_27"
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec72b32873329940918e27d553bc5c9
+      internalID: -1564098262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_28"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ffb79aea7d26546963cab9e876ac34
+      internalID: -2079674885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_29"
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcf8926bcd99f549b5e88e9abf4d3e9
+      internalID: 1811627730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_30"
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c863eda255d24ca4898b6c02aded873e
+      internalID: 257357203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_31"
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeac85c9b19236445b387baaea47d576
+      internalID: -1679922178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_32"
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69927d333df3ba44cbb413f650b82447
+      internalID: -23488684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_33"
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb13f0102e290949a6ef681f4508754
+      internalID: -1529663946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_34"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476ad932da1016747b6d336bf687792f
+      internalID: 93789429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_35"
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8998f31838b06114ab5762ee64a0f2f7
+      internalID: -934547769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_36"
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549094f00819bf5479c06ecdb9a1005d
+      internalID: -857900727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_37"
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b74747ff26ac948ae60063c801aaa4
+      internalID: 1533634281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_38"
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06487cfa2216aa4b8957a8e935a1290
+      internalID: 1083592578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_39"
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567ced4e6a305864cac2a3a7fbb7f51d
+      internalID: -1422317260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_40"
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f223dad7259a9f64fae51a5d9f2a1ccd
+      internalID: 168274515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_41"
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d6e99581c38dd41baeeab255938d1f
+      internalID: -144425397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_42"
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 13
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436aae2533ccceb45a656721f1a71d2f
+      internalID: -1087886295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Burgues_Espa\xF1ol_43"
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 13
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef15e7310717234289ef3ffafbdce61
+      internalID: 243495191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Burgues_Espa\xF1ol_27": -1564098262
+      "Burgues_Espa\xF1ol_41": -144425397
+      "Burgues_Espa\xF1ol_10": 224256526
+      "Burgues_Espa\xF1ol_29": 1811627730
+      "Burgues_Espa\xF1ol_7": -407491179
+      "Burgues_Espa\xF1ol_23": -360369032
+      "Burgues_Espa\xF1ol_1": -620250487
+      "Burgues_Espa\xF1ol_25": 445867139
+      "Burgues_Espa\xF1ol_36": -857900727
+      "Burgues_Espa\xF1ol_35": -934547769
+      "Burgues_Espa\xF1ol_37": 1533634281
+      "Burgues_Espa\xF1ol_17": -1163566613
+      "Burgues_Espa\xF1ol_43": 243495191
+      "Burgues_Espa\xF1ol_28": -2079674885
+      "Burgues_Espa\xF1ol_22": -1216753735
+      "Burgues_Espa\xF1ol_20": -1496253432
+      "Burgues_Espa\xF1ol_21": 166346376
+      "Burgues_Espa\xF1ol_31": -1679922178
+      "Burgues_Espa\xF1ol_33": -1529663946
+      "Burgues_Espa\xF1ol_32": -23488684
+      "Burgues_Espa\xF1ol_38": 1083592578
+      "Burgues_Espa\xF1ol_9": 2063608565
+      "Burgues_Espa\xF1ol_40": 168274515
+      "Burgues_Espa\xF1ol_34": 93789429
+      "Burgues_Espa\xF1ol_4": -610973642
+      "Burgues_Espa\xF1ol_8": -979613557
+      "Burgues_Espa\xF1ol_16": -144724254
+      "Burgues_Espa\xF1ol_15": -31098213
+      "Burgues_Espa\xF1ol_2": -161071118
+      "Burgues_Espa\xF1ol_3": 666281889
+      "Burgues_Espa\xF1ol_5": -1530760433
+      "Burgues_Espa\xF1ol_42": -1087886295
+      "Burgues_Espa\xF1ol_13": -1702368796
+      "Burgues_Espa\xF1ol_6": 2000280795
+      "Burgues_Espa\xF1ol_14": 210082663
+      "Burgues_Espa\xF1ol_12": 1904223237
+      "Burgues_Espa\xF1ol_18": 1140411295
+      "Burgues_Espa\xF1ol_24": -48253469
+      "Burgues_Espa\xF1ol_39": -1422317260
+      "Burgues_Espa\xF1ol_0": 1593314833
+      "Burgues_Espa\xF1ol_26": -1081690765
+      "Burgues_Espa\xF1ol_19": 690710830
+      "Burgues_Espa\xF1ol_30": 257357203
+      "Burgues_Espa\xF1ol_11": 1764791793
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

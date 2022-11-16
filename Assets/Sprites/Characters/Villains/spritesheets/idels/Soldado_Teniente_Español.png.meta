@@ -1,0 +1,1150 @@
+fileFormatVersion: 2
+guid: bb351ae8cca2c5744b88488d9f3f8455
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_0"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75443cf3642de04a858c2983456e9e0
+      internalID: -300053748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_1"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f1abb416584dd4bbca1ac463430795
+      internalID: 467715799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_2"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf6407719d8e5e4e9f939870d81ba10
+      internalID: -625530360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_3"
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe600b11667112a46b6250ee6aad9b76
+      internalID: -229564947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_4"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b424ca5fd2c22b84eae533e272252920
+      internalID: 385177443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_5"
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf7491d9bcbaab4bbef37fc6fc3bf51
+      internalID: 668792177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_6"
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d757ec3ae9bfaf4cb00ccef0131c33a
+      internalID: -2063569444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_7"
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f9fc2c0f6da4f49937605c110d7e9d
+      internalID: 1126990852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_8"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30928ae63bc0b6b40bec4cfb90b4e4c1
+      internalID: -804538835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_9"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9fcf584cb8c4c438dde99d6981f997
+      internalID: -8875458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_10"
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d41e73c55fa1b43a728eb31353c764
+      internalID: 1680889206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_11"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e2897fbc7e5e246ab09c55ca1c266d
+      internalID: 4455627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_12"
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bee1b426edfd74f8c25a3a1903eaa6
+      internalID: -855050470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_13"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8176b6cdcf4d93c48b33fbb5c39d8330
+      internalID: -1608905504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_14"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9802feb32ab78b4d85005206acacb3f
+      internalID: 615219926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_15"
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09eb4695ec6c2c4ab250b1f5bf8626e
+      internalID: -180729829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_16"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b346f8cbf3fbb784fae85b4753f29737
+      internalID: -778541930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_17"
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13698e440a621e46ae4b6f193e18cc8
+      internalID: 1547657232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_18"
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd56d89ef19f5e548a68857cc05880bd
+      internalID: 1395301992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_19"
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c4d1d1d50280478bd5d8860888503
+      internalID: -584223438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_20"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472541c22d91687488fa2073725c6268
+      internalID: -417735015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_21"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56cc6c5368215840a537ff93ac9b158
+      internalID: 1718194276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_22"
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2f0f04ef58af94fab7d21c9e25ffd5
+      internalID: -2020559705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_23"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963bfafdc478b4f41a2b200f7f958500
+      internalID: -946612381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_24"
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25a7ad41df43cc4c8df527f402238f6
+      internalID: -9787281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_25"
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66f708355b73204584d35efc6a484ee
+      internalID: -121094374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_26"
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ce6d3c3deab72499ae37c780491059
+      internalID: 1635530027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_27"
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fa9be07c46c644e8925788cd64ddf5
+      internalID: 1680431336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_28"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2c60a4723438249a4a0223346efdfe
+      internalID: -774650836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_29"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65d8fe43b5779f46a8daf4031435e2f
+      internalID: -370609193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_30"
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af068e8c74a39c84ca567ce8e72a7cdf
+      internalID: -781774009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_31"
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c432ee0e4b47c85478901a6e7b0654e1
+      internalID: 777216436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_32"
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db90cd6448b0bd34998c8e259017d977
+      internalID: 242836073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_33"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fcd7f6531ef094985ef1e8bc84b736
+      internalID: 2098297923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_34"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46796d64c371f3d49bcc107a3c1102b5
+      internalID: 1321282750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_35"
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5ac934d1bf1454cb4d37e1cba993ea
+      internalID: -664561584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_36"
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13382fef9b643224083bb5eeb3fb941c
+      internalID: 405118815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_37"
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61749f1b5adbe394393a8d32e6d4ca93
+      internalID: 1200065554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_38"
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230dd77421285564cab2ca6cac013baf
+      internalID: -1128423218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_39"
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a742714f0a18b1b4da2c92abb408809a
+      internalID: -1284610864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_40"
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b9a9cc183b91e40bf7a977d06cb530
+      internalID: -1399718144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_41"
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308a6e0436730da45a81b21a4db66552
+      internalID: -398176183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_42"
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce57f01e9983dc34ca8924ac854a6809
+      internalID: -535684495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Soldado_Teniente_Espa\xF1ol_43"
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a13b9ff3299a3c4ca8a1c849b688a52
+      internalID: 253641299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Soldado_Teniente_Espa\xF1ol_11": 4455627
+      "Soldado_Teniente_Espa\xF1ol_8": -804538835
+      "Soldado_Teniente_Espa\xF1ol_3": -229564947
+      "Soldado_Teniente_Espa\xF1ol_14": 615219926
+      "Soldado_Teniente_Espa\xF1ol_18": 1395301992
+      "Soldado_Teniente_Espa\xF1ol_35": -664561584
+      "Soldado_Teniente_Espa\xF1ol_20": -417735015
+      "Soldado_Teniente_Espa\xF1ol_21": 1718194276
+      "Soldado_Teniente_Espa\xF1ol_12": -855050470
+      "Soldado_Teniente_Espa\xF1ol_25": -121094374
+      "Soldado_Teniente_Espa\xF1ol_9": -8875458
+      "Soldado_Teniente_Espa\xF1ol_36": 405118815
+      "Soldado_Teniente_Espa\xF1ol_38": -1128423218
+      "Soldado_Teniente_Espa\xF1ol_41": -398176183
+      "Soldado_Teniente_Espa\xF1ol_15": -180729829
+      "Soldado_Teniente_Espa\xF1ol_31": 777216436
+      "Soldado_Teniente_Espa\xF1ol_33": 2098297923
+      "Soldado_Teniente_Espa\xF1ol_10": 1680889206
+      "Soldado_Teniente_Espa\xF1ol_40": -1399718144
+      "Soldado_Teniente_Espa\xF1ol_17": 1547657232
+      "Soldado_Teniente_Espa\xF1ol_19": -584223438
+      "Soldado_Teniente_Espa\xF1ol_27": 1680431336
+      "Soldado_Teniente_Espa\xF1ol_0": -300053748
+      "Soldado_Teniente_Espa\xF1ol_42": -535684495
+      "Soldado_Teniente_Espa\xF1ol_30": -781774009
+      "Soldado_Teniente_Espa\xF1ol_4": 385177443
+      "Soldado_Teniente_Espa\xF1ol_28": -774650836
+      "Soldado_Teniente_Espa\xF1ol_32": 242836073
+      "Soldado_Teniente_Espa\xF1ol_34": 1321282750
+      "Soldado_Teniente_Espa\xF1ol_43": 253641299
+      "Soldado_Teniente_Espa\xF1ol_39": -1284610864
+      "Soldado_Teniente_Espa\xF1ol_7": 1126990852
+      "Soldado_Teniente_Espa\xF1ol_22": -2020559705
+      "Soldado_Teniente_Espa\xF1ol_29": -370609193
+      "Soldado_Teniente_Espa\xF1ol_13": -1608905504
+      "Soldado_Teniente_Espa\xF1ol_23": -946612381
+      "Soldado_Teniente_Espa\xF1ol_26": 1635530027
+      "Soldado_Teniente_Espa\xF1ol_2": -625530360
+      "Soldado_Teniente_Espa\xF1ol_24": -9787281
+      "Soldado_Teniente_Espa\xF1ol_16": -778541930
+      "Soldado_Teniente_Espa\xF1ol_6": -2063569444
+      "Soldado_Teniente_Espa\xF1ol_5": 668792177
+      "Soldado_Teniente_Espa\xF1ol_1": 467715799
+      "Soldado_Teniente_Espa\xF1ol_37": 1200065554
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
