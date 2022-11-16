@@ -71,13 +71,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Assets/Documents/Listaaudio.txt.meta
-Assets/Icons/Iconos Tienda.meta
-Assets/Icons/Iconos Tienda/Objetos tienda.png.meta
-Assets/Icons/Props.meta
-Assets/Icons/Props/Props.png.meta
-Assets/Icons/Storys.meta
-Assets/Icons/Storys/StoryBoard1.jpeg.meta
-Assets/Sprites/Ambient.meta
-Assets/Sprites/Ambient/antorcha.png.meta
-*.meta

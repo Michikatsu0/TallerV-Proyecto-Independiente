@@ -6,7 +6,9 @@ using UnityEngine.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
-    
+    [Header("Audio Settings")]
+    [SerializeField] List<AudioClip> clipList = new List<AudioClip>();
+    [SerializeField] List<AudioSource> sources = new List<AudioSource>();
 
     [Header("Player Movement")]
     [SerializeField] private float _speed;
@@ -78,6 +80,8 @@ public class Player : MonoBehaviour
     }
     private IEnumerator Dash()
     {
+        sources[0].clip = clipList[0];
+        sources[0].Play();
         _canDash = false;
         _isDashing = true;
         Vector2 originalVelocity = _rigidbody2D.velocity;
@@ -113,6 +117,8 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && _canHide)
             {
+                sources[0].clip = clipList[3];
+                sources[0].Play();
                 //_barrelPrefab.SetActive(true);
                 _collider2D.isTrigger = true;
                 _light2D.enabled = false;

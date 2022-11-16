@@ -12,6 +12,7 @@ public class AgentAIController : MonoBehaviour
 
     void Start()
     {
+
         _agentAI = GetComponent<AgentAI>();
         _characterState = CharacterStates.Normal;
     }
@@ -19,6 +20,7 @@ public class AgentAIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         switch (_characterState)
         {
@@ -28,6 +30,7 @@ public class AgentAIController : MonoBehaviour
                     _agentAI.Light.SetActive(true);
                     _agentAI.FieldOfView();
                     _agentAI.AIStateMachine();
+                    _agentAI.AudioControll();
                 }
                 break;
             case CharacterStates.Stuned:
