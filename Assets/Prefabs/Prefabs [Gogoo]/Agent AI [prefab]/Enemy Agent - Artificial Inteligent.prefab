@@ -153,6 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5257396897332412122}
   - component: {fileID: 5257396897332412125}
+  - component: {fileID: 7574780303346000200}
   m_Layer: 13
   m_Name: Circle
   m_TagString: Untagged
@@ -168,8 +169,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257396897332412123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.77, z: 0}
+  m_LocalScale: {x: 2, y: 2.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5257396899078588464}
@@ -216,9 +217,8 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0,
-    type: 3}
-  m_Color: {r: 0.20960745, g: 0.16981132, b: 0.6792453, a: 1}
+  m_Sprite: {fileID: 1593314833, guid: c5fae657b7baeba45b7d63fa9b860d8f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -228,6 +228,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7574780303346000200
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257396897332412123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f5f8db47c8a1174f953d676d2b5fa43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5257396899078588479
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,10 +301,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipList:
-  - {fileID: 8300000, guid: 1426e304ad97ace46b126e6fc27b1ae0, type: 3}
-  - {fileID: 8300000, guid: cec2158bff9d21743b58637e5a98f6bf, type: 3}
-  - {fileID: 8300000, guid: 6387e32131e07c240a1e54931c0b0c34, type: 3}
-  - {fileID: 8300000, guid: 1f1b30164e9ab924fb7df26b42962eec, type: 3}
+  - {fileID: 8300000, guid: 08dd8acbf806da84c847b2310e02f917, type: 3}
+  - {fileID: 8300000, guid: 6779f6b9e9b03df47b8405ab2ead14d5, type: 3}
+  - {fileID: 8300000, guid: 9d1effd01b0ae2049b8596fdd9b49828, type: 3}
+  - {fileID: 8300000, guid: fd292b1f2cb1b4c43a11b214d6e5cc1f, type: 3}
   sources:
   - {fileID: 1785394338}
   _centrePoint: {fileID: 5257396899078588464}
@@ -347,7 +367,7 @@ MonoBehaviour:
   - {x: -0.4522686, y: -0.17834844, z: 0}
   m_ShapePathHash: 1485948135
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1688
+  m_InstanceId: -16220
 --- !u!114 &1772619596687985205
 MonoBehaviour:
   m_ObjectHideFlags: 0
