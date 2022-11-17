@@ -30,7 +30,7 @@ public class AgentAIController : MonoBehaviour
                     _agentAI.Light.SetActive(true);
                     _agentAI.FieldOfView();
                     _agentAI.AIStateMachine();
-                    _agentAI.AudioControll();
+                    _agentAI.AudioControl();
                 }
                 break;
             case CharacterStates.Stuned:
