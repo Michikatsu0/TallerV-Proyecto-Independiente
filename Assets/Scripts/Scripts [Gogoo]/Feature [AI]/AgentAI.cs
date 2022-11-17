@@ -8,18 +8,21 @@ using UnityEngine.AI;
 
 public class AgentAI : MonoBehaviour
 {
+    public enum AIStates { Patroling, Chasing, Catching }
+
     [Header("Audio Settings")]
     [SerializeField] List<AudioClip> clipList = new List<AudioClip>();
     [SerializeField] List<AudioSource> sources = new List<AudioSource>();
 
-    public enum AIStates { Patroling, Chasing, Catching }
+
     [Header("AI Agent Patrolling And Chasing")]
     [SerializeField] private Transform _centrePoint;
     [SerializeField] private Transform _targetPos;
     [SerializeField] private AIStates _aIState;
     [SerializeField] private float _range;
+    [SerializeField] private float _patrolSpeed;
+    [SerializeField] private float _chaseSpeed;
     private NavMeshAgent _agent;
-    private bool _ds;
 
     [Header("AI Agent Field Of View")]
     [SerializeReference][Range(1, 360)] private float _fov = 45f;
@@ -27,22 +30,28 @@ public class AgentAI : MonoBehaviour
     [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private LayerMask _obstaclesLayer;
     [SerializeField] private GameObject _targetRef;
+    [SerializeField] private Color _colorAlert1, _colorAlert2;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private GameObject _light;
     [SerializeField] private bool _onSeenTarget = false;
     private Player _player;
     private Vector2 _pointFov = Vector2.zero;
     private Vector2 _currentDirectionFov = Vector2.zero;
+    [SerializeField] private float _delayToAlert = 0.5f;
+    private float _timeToAlert = 0;
 
     [Header("AI Agent Catch")]
     [SerializeField] private float _delayToCatch = 5f;
     [SerializeField] private float _delayToPatrol = 3f;
-    [SerializeField] private float _timeToCatch = 0;
-    [SerializeField] private float _timeToPatrol = 0;
+    private float _timeToCatch = 0;
+    private float _timeToPatrol = 0;
 
     private Vector3 _previousPos = Vector3.zero;
     private Animator _animator;
-    private bool fly = true;
-    private bool playAwake = false;
+
+    private bool _fly = true, _fly1 = true;
+    private bool _playAwake = false;
+    private Vector3 _direction;
 
     public GameObject Light { get => _light; set => _light = value; }
 
@@ -65,6 +74,15 @@ public class AgentAI : MonoBehaviour
 
     public void FieldOfView()
     {
+        if (_aIState == AIStates.Catching && _fly1)
+        {
+            _animator.SetTrigger("OnCatch");
+            sources[0].clip = clipList[1];
+            _fly1 = false;
+            sources[0].Play();
+        }
+
+
         Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, _radius, _targetLayer);
 
         if (rangeCheck.Length > 0)
@@ -112,32 +130,30 @@ public class AgentAI : MonoBehaviour
 
 
 
-    public void AudioControll()
+    public void AudioControl()
     {
-        
-        
+        if (_aIState == AIStates.Catching) return;
+
         if (_onSeenTarget)
         {
-            playAwake = true;
+            _playAwake = true;
             sources[0].clip = clipList[0];
-            if (fly)
+            if (_fly)
             {
-                fly = false;
+                _fly = false;
                 sources[0].Play();
             }
         }
-        if (!_onSeenTarget && playAwake)
+        if (!_onSeenTarget && _playAwake)
         {
-            playAwake = false;
+            _playAwake = false;
             sources[0].clip = clipList[3];
-            if (!fly)
+            if (!_fly)
             {
-                fly = true;
+                _fly = true;
                 sources[0].Play();
             }
         }
-        
-
 
     }
 
@@ -145,9 +161,9 @@ public class AgentAI : MonoBehaviour
     public void AIStateMachine()
     {
 
-        Vector3 direction = (transform.position - _previousPos).normalized;
-        _animator.SetFloat("X", direction.x);
-        _animator.SetFloat("Y", direction.y);
+        _direction = (transform.position - _previousPos).normalized;
+        _animator.SetFloat("X", _direction.x);
+        _animator.SetFloat("Y", _direction.y);
 
         switch (_aIState)
         {
@@ -168,6 +184,9 @@ public class AgentAI : MonoBehaviour
 
     private void Patroling()
     {
+        _spriteRenderer.enabled = false;
+        _agent.speed = _patrolSpeed;
+        _animator.SetBool("OnChase", false);
         GoToRandomPoint();
         _currentDirectionFov = ((Vector3)_pointFov - _centrePoint.position).normalized;
         if (_currentDirectionFov.x >= 0)
@@ -207,8 +226,11 @@ public class AgentAI : MonoBehaviour
 
     private void MoveToTarget()
     {
-        _animator.SetBool("OnChase", true);
 
+        _spriteRenderer.enabled = true;
+        _animator.SetBool("OnChase", true);
+        _agent.speed = _chaseSpeed;
+        
         if (_onSeenTarget)
         {
 
@@ -251,8 +273,25 @@ public class AgentAI : MonoBehaviour
         }
 
 
-
+        AlertControl();
     }
+    private void AlertControl()
+    {
+        
+        if (_timeToAlert >= _delayToAlert)
+        {
+            _spriteRenderer.color = _colorAlert1;
+            if (_timeToAlert >= _delayToAlert * 2)
+            {
+                _timeToAlert = 0;
+            }
+        }
+        else
+            _spriteRenderer.color = _colorAlert2;
+     
+        _timeToAlert += Time.deltaTime;
+    }
+
     private void FOVChaseTarget()
     {
         _currentDirectionFov = (_targetPos.position - _centrePoint.position).normalized;
@@ -277,9 +316,9 @@ public class AgentAI : MonoBehaviour
 
     private void CatchTarget()
     {
-        _animator.SetTrigger("OnCatch");
-        sources[0].clip = clipList[1];
-        sources[0].Play();
+
+
+        AlertControl();
         _agent.ResetPath();
         _agent.isStopped = true;
     }
