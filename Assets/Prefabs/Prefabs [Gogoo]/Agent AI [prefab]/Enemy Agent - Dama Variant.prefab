@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7163452525754064752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 96299453210497867, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 96299453210497867, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_InstanceId
+      value: -378904
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396897332412122, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396897332412122, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396897332412125, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1926336116, guid: 9b67d3bd6457624489a2b28db061d8e0,
+        type: 3}
+    - target: {fileID: 5257396897332412125, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396897332412125, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396897332412125, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588464, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588478, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: _targetPos
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588478, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: _targetRef
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257396899078588479, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy Agent - Dama
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574780303346000200, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ad6197f10a2589f46ab28799d3860906, type: 2}
+    - target: {fileID: 8073135316257023466, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073135316257023466, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073135316257023466, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073135316257023466, guid: c30408ca4db85d847bfdcd383d604f0d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c30408ca4db85d847bfdcd383d604f0d, type: 3}
