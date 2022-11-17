@@ -76,7 +76,7 @@ public class AgentAI : MonoBehaviour
     {
         if (_aIState == AIStates.Catching && _fly1)
         {
-
+            _animator.SetTrigger("OnCatch");
             sources[0].clip = clipList[1];
             _fly1 = false;
             sources[0].Play();
@@ -230,7 +230,7 @@ public class AgentAI : MonoBehaviour
         _spriteRenderer.enabled = true;
         _animator.SetBool("OnChase", true);
         _agent.speed = _chaseSpeed;
-        AlertControl();
+        
         if (_onSeenTarget)
         {
 
@@ -273,7 +273,7 @@ public class AgentAI : MonoBehaviour
         }
 
 
-
+        AlertControl();
     }
     private void AlertControl()
     {
@@ -317,8 +317,8 @@ public class AgentAI : MonoBehaviour
     private void CatchTarget()
     {
 
-        _animator.SetTrigger("OnCatch");
 
+        AlertControl();
         _agent.ResetPath();
         _agent.isStopped = true;
     }
