@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class AgentAI : MonoBehaviour
 {
@@ -80,6 +79,11 @@ public class AgentAI : MonoBehaviour
             sources[0].clip = clipList[1];
             _fly1 = false;
             sources[0].Play();
+            PlayerController player = _player.GetComponent<PlayerController>();
+            _player._animator.SetFloat("Speed", 0);
+            _player._direction = Vector3.zero;
+            player._characterState = PlayerController.CharacterStates.Stuned;
+            Invoke("end", 4f);
         }
 
 
@@ -316,13 +320,21 @@ public class AgentAI : MonoBehaviour
 
     private void CatchTarget()
     {
-
-
+        PlayerController player = _player.GetComponent<PlayerController>();
+        
+        player._characterState = PlayerController.CharacterStates.Stuned;
+        _player._direction = Vector3.zero;
+        _animator.SetFloat("Speed", 0);
         AlertControl();
         _agent.ResetPath();
         _agent.isStopped = true;
-    }
 
+        Invoke("end", 4f);
+    }
+    void end()
+    {
+        SceneManager.LoadScene("EndScene");
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {

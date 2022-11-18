@@ -11,9 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] List<AudioSource> sources = new List<AudioSource>();
 
     [Header("Player Movement")]
-    [SerializeField] private float _speed;
-    private Rigidbody2D _rigidbody2D;
-    private static Vector3 _direction;
+    [SerializeField] public float _speed;
+    public Rigidbody2D _rigidbody2D;
+    public Vector3 _direction;
 
     [Header("Player Hide")]
     [SerializeField] private Color _isVisible;
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     private bool _canDash = true;
     private bool _isDashing;
 
-    private Animator _animator;
+    public Animator _animator;
     private Vector3 _lookDir;
     private Vector3 _previousPos;
 
