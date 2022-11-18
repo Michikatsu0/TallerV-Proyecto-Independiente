@@ -34,8 +34,10 @@ public class Player : MonoBehaviour
     private TrailRenderer _trailRenderer;
     private bool _canDash = true;
     private bool _isDashing;
-    
 
+    private Animator _animator;
+    private Vector3 _lookDir;
+    private Vector3 _previousPos;
 
     public bool IsHiding { get => _isHiding; set => _isHiding = value; }
     public bool CanHide { get => _canHide; set => _canHide = value; }
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         //_barrelPrefab.SetActive(false);
+        _animator = GetComponentInChildren<Animator>();
         _trailRenderer = GetComponentInChildren<TrailRenderer>();
         _renderer = GetComponentInChildren<SpriteRenderer>();
         _light2D = GetComponentInChildren<Light2D>();
@@ -64,9 +67,15 @@ public class Player : MonoBehaviour
 
     private void MovementMechanic()
     {
+
         if (!_canHide || _isDashing) return;
         _direction = new Vector3(Input.GetAxis("Horizontal1"), Input.GetAxis("Vertical1"), 0).normalized;
+        _animator.SetFloat("X", _direction.x);
+        _animator.SetFloat("Y", _direction.y);
+        _animator.SetFloat("Speed", _direction.magnitude);
         _rigidbody2D.velocity = new Vector3(_direction.x * _speed, _direction.y * _speed);
+
+        _previousPos = transform.position;
     }
 
 
@@ -80,6 +89,7 @@ public class Player : MonoBehaviour
     }
     private IEnumerator Dash()
     {
+        _animator.SetTrigger("OnDash");
         sources[0].clip = clipList[0];
         sources[0].Play();
         _canDash = false;
@@ -102,6 +112,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && _canHide)
             {
+                _animator.SetBool("OnHiden", true);
                 _rigidbody2D.velocity = Vector2.zero;
                 _canHide = false;
                 _renderer.color = _isInvisible;
@@ -109,6 +120,7 @@ public class Player : MonoBehaviour
             }
             else if(Input.GetKeyUp(KeyCode.Space))
             {
+                _animator.SetBool("OnHiden", false);
                 _canHide = true;
                 _renderer.color = _isVisible;
             }
@@ -117,6 +129,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && _canHide)
             {
+                _animator.SetBool("OnHiden", true);
                 sources[0].clip = clipList[3];
                 sources[0].Play();
                 //_barrelPrefab.SetActive(true);
@@ -131,6 +144,7 @@ public class Player : MonoBehaviour
             else if (Input.GetKeyUp(KeyCode.Space))
             {
                 //_barrelPrefab.SetActive(false);
+                _animator.SetBool("OnHiden", false);
                 _collider2D.isTrigger = false;
                 _light2D.enabled = true;
                 _shadowCaster2D.castsShadows = true;
