@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public enum CharacterStates { Normal, Stuned }
 
     [Header("Player Controller")]
-    [SerializeField] private CharacterStates _characterState;
+    [SerializeField] public CharacterStates _characterState;
     private Player _player;
 
     void Start()
@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour
             case CharacterStates.Stuned:
                 if (_player != null)
                 {
-
+                    _player._direction = Vector3.zero;
+                    _player._speed = 0;
+                    _player._rigidbody2D.velocity = Vector3.zero;
                 }    
                 break;
         }
